@@ -5,22 +5,12 @@ pipeline {
     
 	 stage ('Git Checkout'){
 		 steps {
-                 sh 'git clone https://github.com/vivekdevopshub/terraform-repo'
+	         sh 'rm -rf /home/ubuntu/terraform-repo'
+                 sh 'git clone https://github.com/vivekdevopshub/terraform-repo.git /home/ubuntu'
                       }
 	                       }
 	 
-	 stage ('Compile Stage'){
-			steps {
-			echo "Compile Success"
-			      }
-			}
-      
-      stage ('Provision Infrastructure'){
-           steps {
-           sh 'terraform init'
-           sh 'terraform plan'
-                 }
-                                        }
+	
 
      }
  
