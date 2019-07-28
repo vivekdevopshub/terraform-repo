@@ -2,7 +2,14 @@ pipeline {
      agent any
  
  stages {
-    stage ('Compile Stage'){
+    
+	 stage ('Git Clone'){
+		 steps{
+		 sh 'rm -rf test2.sh'
+		 }
+	 }
+	 
+	 stage ('Compile Stage'){
 			steps {
 			echo "Compile Success"
 			      }
