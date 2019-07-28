@@ -5,8 +5,8 @@ pipeline {
     
 	 stage ('Git Checkout'){
 		 steps {
-	         sh 'rm -rf /home/ubuntu/terraform-repo'
-                 sh 'git clone https://github.com/vivekdevopshub/terraform-repo.git /home/ubuntu'
+	         sh 'sudo rm -rf /home/ubuntu/terraform-repo'
+                 sh 'sudo git clone https://github.com/vivekdevopshub/terraform-repo.git /home/ubuntu'
                       }
 	                       }
 	 
