@@ -3,12 +3,11 @@ pipeline {
  
  stages {
     
-	 stage ('Git Clone'){
-		 steps{
-	         sh 'cd /home/ubuntu'
-		 sh 'rm -rf test2.sh'
-		 }
-	 }
+	 stage ('Git Checkout'){
+		 steps {
+                 git branch: ‘master’, url: ‘https://github.com/vivekdevopshub/terraform-repo.git’
+                      }
+	                       }
 	 
 	 stage ('Compile Stage'){
 			steps {
