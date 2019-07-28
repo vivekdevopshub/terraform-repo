@@ -5,7 +5,7 @@ pipeline {
     
 	 stage ('Git Checkout'){
 		 steps {
-                 git branch: ‘master’, url: ‘https://github.com/vivekdevopshub/terraform-repo.git’
+                 sh 'git clone https://github.com/vivekdevopshub/terraform-repo'
                       }
 	                       }
 	 
