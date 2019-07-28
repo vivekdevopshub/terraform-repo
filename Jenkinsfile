@@ -5,6 +5,7 @@ pipeline {
     
 	 stage ('Git Clone'){
 		 steps{
+	         sh 'cd /home/ubuntu'
 		 sh 'rm -rf test2.sh'
 		 }
 	 }
