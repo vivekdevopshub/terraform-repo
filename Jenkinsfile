@@ -1,3 +1,5 @@
+String credentialsId = 'awsCredentials'
+
 node{
   
   stage('Checkout') {
