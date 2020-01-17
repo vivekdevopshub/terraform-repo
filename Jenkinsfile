@@ -4,9 +4,18 @@ node{
        checkout scm
   }
 
- stage('Terraform Init')
-  {
-  sh 'sudo /home/ubuntu/terraform init ./jenkins'
-  }
+  // Run terraform init
+  stage('init') {
+         withCredentials([[
+        $class: 'AmazonWebServicesCredentialsBinding',
+        credentialsId: credentialsId,
+        accessKeyVariable: 'AWS_ACCESS_KEY_ID',
+        secretKeyVariable: 'AWS_SECRET_ACCESS_KEY'
+      ]]) {
+        
+          sh 'terraform init'
+              }
+      }
+
 
 }
