@@ -4,9 +4,9 @@ node{
        checkout scm
   }
 
- stage('Build Phase')
+ stage('Terraform Init')
   {
-  echo "Build Phase started"
+  sh 'sudo /home/ubuntu/terraform init ./jenkins'
   }
 
 }
