@@ -2,11 +2,13 @@ node {
 	
 	stage('Checkout')
 	{
-	echo "Checkout repo"
+		echo "Checkout repo"
 	}
 	
 	stage('unit test')
-	{ echo "Unit test" }
+	{ 
+		echo "Unit test" 
+	}
 	
 	
 }
