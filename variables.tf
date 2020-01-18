@@ -15,6 +15,6 @@ variable "instance_type" {
 variable "ami" {
   description = "Base AMI to launch the instances"
 
-  # AWS base Windows 2019 image
-  default = "ami-028b3bf1662e6082f"
+  # AWS linux ami image
+  default = "ami-0217a85e28e625474"
 }
