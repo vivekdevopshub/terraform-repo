@@ -4,17 +4,13 @@ pipeline {
   
   stages {
     
-       stage('git clone') {
+       stage('Terraform Init') {
              steps {
-                sh 'sudo rm -r *;sudo git clone https://github.com/vivekdevopshub/terraform-repo.git'
+                sh "terraform init"
                   }
                            }
     
-    stage('Compile')  {
-         steps{
-           echo "Compilation started"
-             }
-                      }
+    
 
          }
     }
