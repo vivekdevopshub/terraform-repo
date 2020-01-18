@@ -17,7 +17,7 @@ pipeline {
             }
     }
 
-def getTerraformPath() {
+def getTerraformPath(){
 get tfHome = tool name: 'terraform', type: 'org.jenkinsci.plugins.terraform.TerraformInstallation'
     return tfHome
 }
