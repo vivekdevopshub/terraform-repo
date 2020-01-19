@@ -10,7 +10,7 @@ terraform {
 # Use AWS Terraform provider
 provider "aws" {
   region = "ap-south-1"
-  version = "~> 2.21"
+  version = "~> 0.11
 }
 
 # Create EC2 instance
