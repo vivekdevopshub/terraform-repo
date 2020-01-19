@@ -1,7 +1,7 @@
 
 # Use AWS Terraform provider
 provider "aws" {
-  region = "${var.region}"
+  region = "ap-south-1"
 #  version = "~> 0.11
 }
 
