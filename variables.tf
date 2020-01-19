@@ -1,5 +1,5 @@
-variable "my-access-key" {}
-variable "my-secret-key" {}
+variable "myAccessKey" {}
+variable "mySecretKey" {}
 
 variable "count_instance" {
   default = 1
