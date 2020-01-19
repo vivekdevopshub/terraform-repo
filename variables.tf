@@ -1,6 +1,3 @@
-variable "myAccessKey" {}
-variable "mySecretKey" {}
-
 variable "count_instance" {
   default = 1
 }
