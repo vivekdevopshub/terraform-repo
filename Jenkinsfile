@@ -6,6 +6,7 @@ pipeline{
     stages{
         stage('Terraform Init') {
             steps{
+                sh "terraform 0.12upgrade"
                 sh "terraform init"
             }
         }
