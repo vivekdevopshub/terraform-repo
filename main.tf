@@ -10,8 +10,8 @@ terraform {
 # Use AWS Terraform provider
 provider "aws" {
   region = "ap-south-1"
-  access_key = "${var.my-access-key}"
-  secret_key = "${var.my-secret-key}"
+  access_key = "${var.myAccessKey}"
+  secret_key = "${var.mySecretKey}"
 #  version = "~> 2.21"
 }
 
