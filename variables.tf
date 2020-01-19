@@ -1,3 +1,6 @@
+variable "region" {
+  default = "ap-south-1"
+}
 variable "count_instance" {
   default = 1
 }
