@@ -1,3 +1,6 @@
+variable "my-access-key" {}
+variable "my-secret-key" {}
+
 variable "count_instance" {
   default = 1
 }
@@ -5,7 +8,7 @@ variable "count_instance" {
 variable "key_name" {
   description = "Private key name to use with instance"
   default     = "terraform"
-}
+
 
 variable "instance_type" {
   description = "AWS instance type"
