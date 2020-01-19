@@ -1,11 +1,3 @@
-# Terraform state will be stored in S3
-terraform {
-  backend "s3" {
-    bucket = "terraform-bucket-vik"
-    key    = "terraform.tfstate"
-    region = "ap-south-1"
-  }
-}
 
 # Use AWS Terraform provider
 provider "aws" {
@@ -46,3 +38,14 @@ resource "aws_security_group" "default" {
   }
 
 }
+
+
+# Terraform state will be stored in S3
+terraform {
+  backend "s3" {
+    bucket = "terraform-bucket-vik"
+    key    = "terraform.tfstate"
+    region = "ap-south-1"
+  }
+}
+
