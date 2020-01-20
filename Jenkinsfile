@@ -7,7 +7,7 @@ pipeline{
         stage('Terraform Init') {
             steps{
                 sh "terraform init"
-                sh "terraform 0.12upgrade -yes"
+            //    sh "terraform 0.12upgrade -yes"
                 }
         }
         
