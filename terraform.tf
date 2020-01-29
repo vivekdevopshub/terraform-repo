@@ -5,7 +5,7 @@ provider "aws" {
 
 terraform {
   backend "s3" {
-    bucket = "source-bucket-vik"
+    bucket = "source-bucket-vivek"
     key    = "terraform/dev/terraform.tfstate"
     region = "ap-south-1"
   }
